@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
 import Clientes from './pages/Clientes'
+import Logout from './pages/Logout'
 import Proveedor from './pages/Proveedor'
 import Usuarios from './pages/Usuarios'
 
@@ -15,7 +16,7 @@ function App() {
           <Route path="/clientes" element={<Clientes />} />
           <Route path="/proveedor" element={<Proveedor />} />
           <Route path="/usuarios" element={<Usuarios />} />
-          <Route path="/logout" element={<h1>Logout</h1>} />
+          <Route path="/logout" element={<Logout />} />
         </Routes>
       </main>
     </BrowserRouter>
