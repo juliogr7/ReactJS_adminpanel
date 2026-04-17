@@ -10,9 +10,9 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <main className="container py-4">
+      <main className="container py-5">
         <Routes>
-          <Route path="/" element={<h1>Panel Administrativo</h1>} />
+          <Route path="/" element={<h1 className="mb-4">Panel Administrativo</h1>} />
           <Route path="/clientes" element={<Clientes />} />
           <Route path="/proveedor" element={<Proveedor />} />
           <Route path="/usuarios" element={<Usuarios />} />

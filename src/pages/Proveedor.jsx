@@ -22,27 +22,29 @@ const proveedores = [
 function Proveedor() {
   return (
     <div>
-      <h1>Proveedor</h1>
-      <table className="table table-striped">
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>Nombre</th>
-            <th>Producto</th>
-            <th>Estado</th>
-          </tr>
-        </thead>
-        <tbody>
-          {proveedores.map((proveedor) => (
-            <tr key={proveedor.id}>
-              <td>{proveedor.id}</td>
-              <td>{proveedor.nombre}</td>
-              <td>{proveedor.producto}</td>
-              <td>{proveedor.estado}</td>
+      <h1 className="mb-4">Proveedor</h1>
+      <div className="table-responsive">
+        <table className="table table-striped table-hover align-middle bg-white">
+          <thead className="table-success">
+            <tr>
+              <th>Id</th>
+              <th>Nombre</th>
+              <th>Producto</th>
+              <th>Estado</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {proveedores.map((proveedor) => (
+              <tr key={proveedor.id}>
+                <td>{proveedor.id}</td>
+                <td>{proveedor.nombre}</td>
+                <td>{proveedor.producto}</td>
+                <td>{proveedor.estado}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   )
 }

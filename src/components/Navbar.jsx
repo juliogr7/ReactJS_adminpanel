@@ -3,7 +3,7 @@ import Menu from './Menu'
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
       <div className="container">
         <Header />
         <div className="navbar-collapse">

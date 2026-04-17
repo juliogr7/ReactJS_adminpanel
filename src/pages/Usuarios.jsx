@@ -22,27 +22,29 @@ const usuarios = [
 function Usuarios() {
   return (
     <div>
-      <h1>Usuarios</h1>
-      <table className="table table-striped">
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>Nombre</th>
-            <th>Rol</th>
-            <th>Estado</th>
-          </tr>
-        </thead>
-        <tbody>
-          {usuarios.map((usuario) => (
-            <tr key={usuario.id}>
-              <td>{usuario.id}</td>
-              <td>{usuario.nombre}</td>
-              <td>{usuario.rol}</td>
-              <td>{usuario.estado}</td>
+      <h1 className="mb-4">Usuarios</h1>
+      <div className="table-responsive">
+        <table className="table table-striped table-hover align-middle bg-white">
+          <thead className="table-success">
+            <tr>
+              <th>Id</th>
+              <th>Nombre</th>
+              <th>Rol</th>
+              <th>Estado</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {usuarios.map((usuario) => (
+              <tr key={usuario.id}>
+                <td>{usuario.id}</td>
+                <td>{usuario.nombre}</td>
+                <td>{usuario.rol}</td>
+                <td>{usuario.estado}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   )
 }
