@@ -6,8 +6,7 @@
 
 </div>
 
-> [!NOTE]
-> Este proyecto simula un panel administrativo completo, incluyendo rutas dedicadas para la gestión de clientes, proveedores, usuarios y control de sesión.
+
 
 ---
 
